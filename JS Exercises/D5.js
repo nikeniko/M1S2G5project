@@ -133,10 +133,12 @@ const numericArray = [
 ];
 
 while (index < numericArray.length && numericArray[index] !== 32) {
+  // continuerà ad andare finche index è minore della lunghezza dell'array e il numero non è 32
   console.log(numericArray[index]);
   index++;
 }
 if (index < numericArray.length && numericArray[index] === 32) {
+  //1ui include il 32 per poterlo stampare
   console.log(numericArray[index]);
 }
 
@@ -146,3 +148,12 @@ if (index < numericArray.length && numericArray[index] === 32) {
     es. [f, b, e] --> [6, 2, 5]
 */
 const charactersArray = ["g", "n", "u", "z", "d"];
+
+const positionsArray = [];
+
+for (let index = 0; index < charactersArray.length; index++) {
+  const position = charactersArray[index].charCodeAt(0) - "a".charCodeAt(0) + 1; //charCodeAt sua il cosice ASCII quindi quello che succede è  ('a' è 97) quindi in caso di ("g" = 103 - 97 + 1 = 7)
+  positionsArray.push(position);
+}
+
+console.log(positionsArray);
