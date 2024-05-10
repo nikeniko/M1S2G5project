@@ -1,1 +1,21 @@
 /* Your styles here */
+.logoTopLeft {
+  background-color: #222f3f;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+#logoTopLeft {
+  margin-left: 20px;
+}
+.underLogo {
+  background-color: #364759;
+  padding: 7px;
+}
+.underLogoText span {
+  color: white;
+  padding-left: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+}
